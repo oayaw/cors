@@ -1,9 +1,6 @@
 [build]
   command = "npm install"
-  functions = "cors-anywhere.js"
-  publish = "build"
+  publish = "cors-anywhere.js"
 
-[[redirects]]
-  from = "/*"
-  to = "./lib/cors-anywhere.js"
-  status = 200
+[functions]
+  directory = "functions"
